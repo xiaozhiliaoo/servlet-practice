@@ -25,6 +25,7 @@ public class EncodeFilter implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         System.out.println("before do EncodeFilter");
         request.setCharacterEncoding(charSet);
+        chain.doFilter(request,response);
         System.out.println("after do EncodeFilter");
     }
 }

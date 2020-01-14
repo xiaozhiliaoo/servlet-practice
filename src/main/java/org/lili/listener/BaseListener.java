@@ -10,7 +10,7 @@ import javax.servlet.annotation.WebListener;
  * @description
  */
 @WebListener
-public class BaseListner implements ServletContextListener {
+public class BaseListener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent sce) {
         System.out.println("context-key:" + sce.getServletContext().getInitParameter("context-key"));

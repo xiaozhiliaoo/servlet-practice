@@ -12,11 +12,12 @@ public class BaseServletContextListener implements ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
-        System.out.println("container init");
+        String contextPath = sce.getServletContext().getContextPath();
+        System.out.println("BaseServletContextListener.contextInitialized init, contextPath is:"+contextPath);
     }
 
     @Override
     public void contextDestroyed(ServletContextEvent sce) {
-        System.out.println("container destory");
+        System.out.println("BaseServletContextListener.contextInitialized destory");
     }
 }

@@ -11,7 +11,7 @@ import java.io.IOException;
 public class SimpleFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        System.out.println("filter init param: "+ filterConfig.getInitParameter("filter"));
+        System.out.println("SimpleFilter init param: "+ filterConfig.getInitParameter("filter"));
     }
 
     @Override
